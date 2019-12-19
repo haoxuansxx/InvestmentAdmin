@@ -1,0 +1,12 @@
+spring:
+  thymeleaf:
+    cache: false
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/investment_admin?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password: mysql
+
+mybatis:
+  type-aliases-package: com.investment.entity
+  mapper-locations: classpath:mapper/*.xml
